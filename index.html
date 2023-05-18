@@ -10,10 +10,21 @@
 
 	<title>Document</title>
 	
-<script>
-		if('serviceWorker' in navigator){
+</head>
 
-			navigator.serviceWorker.register('/script.js')
+<body>
+
+	<div id="pk">
+
+		<span>1</span>
+
+	</div>
+
+<script src="main.js">
+</script>
+	<script>if('serviceWorker' in navigator){
+
+			navigator.serviceWorker.register('/script.js')</script>
 
 			.then(function(registration){
 
@@ -28,21 +39,8 @@
 			})
 
 		}
-
+	
 	</script>
-</head>
-
-<body>
-
-	<div id="pk">
-
-		<span>1</span>
-
-	</div>
-
-<script src="main.js">
-</script>
-
 </body>
 
 </html>
