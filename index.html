@@ -9,6 +9,27 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>Document</title>
+	
+
+		if('serviceWorker' in navigator){
+
+			navigator.serviceWorker.register('/script.js')
+
+			.then(function(registration){
+
+				console.log('serviceWorker berhasil di daftarkan',registration.scope)
+
+			})
+
+			.catch(function(error){
+
+				console.log('serviceWorker gagal di daftarkan',error)
+
+			})
+
+		}
+
+	</script>
 </head>
 
 <body>
