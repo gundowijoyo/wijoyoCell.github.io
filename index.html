@@ -3,12 +3,13 @@
 <html lang="en">
 
 <head>
-
+<script src="main.js"></script>
 	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>Document</title>
+	
 	
 </head>
 
@@ -19,8 +20,11 @@
 		<span>1</span>
 
 	</div>
+	
+	
 	<script>
-setInterval(()=>{
+		
+/*setInterval(()=>{
 let ne = new Date() 		
 let pk = document.getElementById("pk")
 pk.innerText =
@@ -29,7 +33,7 @@ ne.getMinutes()+":"+
 ne.getSeconds()
 },1000)	
 	
-if('serviceWorker' in navigator){
+*/if('serviceWorker' in navigator){
 
 navigator.serviceWorker.register('/script.js')
 .then(function(registration){
