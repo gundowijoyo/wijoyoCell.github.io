@@ -1,4 +1,4 @@
-self.addEventListener('install',function(event){
+/*self.addEventListener('install',function(event){
 	event.waitUntil(
 		caches.open('my-caches-v2').then(function(cache){
 			return cache.addAll([
