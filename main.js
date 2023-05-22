@@ -1,4 +1,4 @@
-setInterval(()=>{
+/*setInterval(()=>{
 
 	let p = new Date()
 
@@ -12,4 +12,4 @@ setInterval(()=>{
 
 	  p.getSeconds()
 
-})
+})*/
