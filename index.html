@@ -15,7 +15,7 @@
 
 <body>
 
-	<div id="pk">
+	<div id="result">
 
 		<span>waitingg Hehe...</span>
 
@@ -25,27 +25,13 @@
 	<script>
 		
 setInterval(()=>{
-let ne = new Date() 		
-let pk = document.getElementById("pk")
+let ne = new Date();		
+let pk = document.getElementById("result");
 pk.innerText =
 ne.getHours()+":"+
 ne.getMinutes()+":"+
-ne.getSeconds()
-},1000)	
-	
-/*if('serviceWorker' in navigator){
-
-navigator.serviceWorker.register('/script.js')
-.then(function(registration){
-console.log('serviceWorker berhasil di daftarkan',registration.scope)
-
-})
-.catch(function(error){
-console.log('serviceWorker gagal di daftarkan',error)
-})
-}*/
-	
-	
+ne.getSeconds();
+},1000);	
 	</script>
 </body>
 
